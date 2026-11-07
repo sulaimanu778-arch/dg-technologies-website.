@@ -224,3 +224,5 @@ h2 {
 
 .section h2 { margin-top: 30px; }
 .section h2:first-child { margin-top: 0; }
+.card-link { color: var(--blue); font-weight: 700; text-decoration: none; }
+.card-link:hover { text-decoration: underline; }
