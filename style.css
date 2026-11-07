@@ -20,6 +20,8 @@ body {
   background: var(--white);
 }
 
+img { max-width: 100%; }
+
 .container {
   width: 100%;
   max-width: 1100px;
@@ -42,15 +44,27 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   color: var(--white);
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.brand-logo {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  background: var(--grey);
+  border-radius: 8px;
+  padding: 2px;
 }
 
 nav a {
@@ -66,7 +80,7 @@ nav a:hover { color: #8DBBFF; }
 .hero {
   background: var(--navy);
   color: var(--white);
-  padding: 80px 0 90px;
+  padding: 70px 0 80px;
   background-image: repeating-linear-gradient(
     0deg,
     rgba(22, 119, 255, 0.08) 0,
@@ -74,6 +88,33 @@ nav a:hover { color: #8DBBFF; }
     transparent 2px,
     transparent 44px
   );
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text { flex: 1 1 380px; }
+
+.hero-logo {
+  flex: 0 1 300px;
+  width: 100%;
+  max-width: 300px;
+  background: var(--grey);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .badge {
