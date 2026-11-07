@@ -226,3 +226,4 @@ h2 {
 .section h2:first-child { margin-top: 0; }
 .card-link { color: var(--blue); font-weight: 700; text-decoration: none; }
 .card-link:hover { text-decoration: underline; }
+.site-footer a { color: #8DBBFF; font-weight: 600; }
